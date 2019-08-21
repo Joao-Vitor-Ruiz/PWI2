@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Exemplo usando IF</title>
+     <script>
+          function media(){
+               var v1 = parseFloat(document.f1.v1.value);
+               var v2 = parseFloat(document.f1.v2.value);
+               var m = (v1 + v2) / 2;
+               var ap = "Aprovado";
+               var rp = "Reprovado"
+               document.getElementById("media").innerHTML="Media " + m;
+               if(m >= 7){
+                    document.write(ap.fontcolor("blue"));
+               } else {
+                    document.write(rp.fontcolor("red"));
+               }
+          }
+     </script>
+</head>
+,0
+     <body>
+          <form action="" name="f1">
+                    Valor 1: <input type="text" name="v1"/> <br>
+                    Valor 2: <input type="text" name="v2"/> <br>
+                    <p id="media"></p>   
+          </form>
+          <button onclick="media()">Calcular Media</button>
+     </body>
+</html>

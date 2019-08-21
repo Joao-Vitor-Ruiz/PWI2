@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>onfocus onblur</title>
+    <script>
+    function focoEmail() {
+        console.log("O campo e-mail está em foco.");
+    }
+    function focoSenha() {
+        console.log("O campo senha está em foco.");
+    }
+    </script>
+</head>
+<body>
+    <form>
+        Email<input name="email" type="email" onfocus="focoEmail()"/><br>
+        Senha<input name="senha" type="password" onfocus="focoSenha()"/>
+    </form>
+</body>
+</html>
