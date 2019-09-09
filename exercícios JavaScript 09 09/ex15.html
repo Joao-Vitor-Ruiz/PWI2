@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 15</title>
+    <style>
+        table, tr, td {
+            border:solid 1px #000;
+            }
+    </style>
+    <script>
+        function tabTabela(){
+            var i = 1;
+            var i2 = 1;
+            for(i; i < 11; i++){
+                document.write("<table border='1px'>");
+                for(i2 = 1; i2 < 11; i2++){
+                    document.write("<tr>");
+                    document.write("<td width='60px' align='center'>" + i + " x " + i2 + " </td><td width='60px' align='center'>" + i*i2 + "</td>");
+                    document.write("</tr>");
+                }
+                document.write("</table>");
+                document.write("<br>")
+            }
+        }
+    </script>
+
+</head>
+<body onload="tabTabela()">
+    
+</body>
+</html>

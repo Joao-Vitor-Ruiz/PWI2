@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercício 11</title>
+        <script>
+            function numN(){
+                var N = parseFloat(document.f.N.value);
+                var i = 1;
+                for(i; i <= N; i++){
+                    document.write(i, "<br>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" name="f">
+            Insira um valor numérico positivo: <input type="number" name="N" required />
+            <p id="Result"></p>
+        </form>
+        <button onclick="numN()">Mostrar Sequência</button>
+    </body>
+</html>
