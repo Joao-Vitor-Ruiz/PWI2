@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Exemplo 13, obtendo um value de um input </title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            alert("Valor: " + $("#nome").val());
+        });
+    });
+    </script>
+</head>
+<body>
+    <p>nome: <input type="text" id="nome" value="João Henrique Dalto da Silva"></p>
+    <button>Clique aqui!!!</button>
+</body>
+</html>

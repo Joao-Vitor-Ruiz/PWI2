@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>exemplojQueryCSS</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+    $(document).ready(function() {
+     $("#get").click(function() {
+        var fonte=$("h1").css("fontSize");
+        alert(fonte);
+     });
+     $("#set").click(function() {
+        $("h1").css("fontSize", "50px");
+     });
+     $("#set2").click(function(){
+        $("h1").css({
+            fontSize: "100px",
+            color: "hotpink"
+        });
+     });
+    });
+    </script>
+</head>
+<body>
+    <h1> Texto que magicamente sera modificado</h1>
+    <button id="get"> Get o valor</button>
+    <button id="set"> SET o valor</button>
+    <button id="set2">SET o valor</button>
+</body>
+</html>

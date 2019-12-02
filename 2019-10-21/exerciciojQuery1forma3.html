@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício de jQuery1</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".miniaturas").click(function (){
+                var caminho = $(this).attr("src");
+                $("#grande").attr("src", caminho);
+            });
+        });
+    </script>
+    <style type="text/css">
+        #grande{
+            background-color: blue;
+            width: 400px;
+            height: 300px;
+            float: left;
+        }
+        .miniaturas{
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img id="grande" src="verde.jpg"></div>
+    <div class="miniaturas" src="amarelo.jpg"><img src="amarelo.jpg" alt="amarelo" width="60px" height="60px"></div>
+    <div class="miniaturas" src="azul.jpg"><img src="azul.jpg" alt="azul" width="60px" height="60px"></div>
+    <div class="miniaturas" src="verde.jpg"><img src="verde.jpg" alt="verde" width="60px" height="60px"></div>
+    <vid class="miniaturas" src="vermelho.jpg"><img src="vermelho.jpg" alt="vermelho" width="60px" height="60px"></div>
+</body>
+</html>

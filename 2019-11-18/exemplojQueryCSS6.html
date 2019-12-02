@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo numero 6 de CSS com Jquerry</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#setNome").click(function(){
+               var nome = $( "input[name='nome'] ");
+               nome.css("backgroundColor", "yellow");
+           });
+           $("#setText").click(function(){
+               var nome= $( "input[type = 'text'] ");
+               nome.css("backgroundColor", "red");
+           });
+           $("#setType").click(function(){
+               var nome= $( "input[type = 'email'] ");
+               nome.css("backgroundColor", "pink");
+           });
+           $("#limpar").click(function(){
+               $( "input").css("backgroundColor", "white");
+           }); 
+        });
+    </script>
+</head>
+<body>
+    <form form="form1">
+        Nome: <input type="text" name="nome"/><br>
+        Cidade: <input type="text" name="cidade"/><br>
+        Email: <input type="email"name="email"/><br><br>
+    </form>
+    <button id="setNome">Set Campo Nome</button>
+    <button id="setText">Set Tipo</button>
+    <button id="setType">Set tipo Email</button>
+    <button id="limpar">Limpo</button>
+</body>
+</html>

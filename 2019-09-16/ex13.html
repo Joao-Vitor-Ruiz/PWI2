@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercício 13</title>
+		<script>
+			function seq(){
+				var valor = parseFloat(document.f.valor.value);
+				var i = 1;
+				if(valor <= 10 && valor >=0){
+					for(i;i < 11; i++){
+						document.write(valor + " x " + i + " = " + i*valor + "<br>");
+					}
+				}
+				else{
+					document.write("Valor Inválido");
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+	<form name="f">
+		insira o valor: <input type="number" name="valor" required />
+	</form>
+	<button onclick="seq()">Ver tabuada</button>
+	</body>
+</html>

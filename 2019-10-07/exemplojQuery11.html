@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 11 de jQuerry: click com hide</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(this).hide();
+            });
+            $("p").click(function(){
+                $(this).hide();
+            });
+            $("h1").click(function(){
+                $(this).hide();
+            });
+            $("h2").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Clique nos paragragrafos ou no botão para oculta-lo</h1>
+    <h2>cabeçalho</h2>
+    <p>Pragrafo show.2</p>
+    <p>Paragrafo shooooooooooow</p>
+    <button>Clique aqui</button>
+</body>
+</html>

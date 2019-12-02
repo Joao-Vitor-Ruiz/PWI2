@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.4.1.js"></script>
+    <style type="text/css">
+        .vermelho{
+            color: red;
+        }
+        .borda{
+            border: solid blue;
+            border-width: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").addClass("vermelho borda");
+            });
+            $("#limpo").click(function(){
+                $("p").removeClass("vermelho borda")
+            })    
+        });
+    </script>
+    <title>exemplojQueryCSS 2</title>
+</head>
+<body>
+    <h1>Colocando uma classe em "p"</h1>
+    <h2>Isso é um cabeçalho. Ele não ira mudar</h2>
+    <p>Isso é um parágrafo</p>
+    <p>Isso é um parágrafo também</p>
+    <button>Clique</button>
+    <button id="limpo"> limpo</button>
+</body>
+</html>

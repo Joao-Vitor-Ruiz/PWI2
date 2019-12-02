@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>exemplo jQuery 12</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+     $(document).ready(function(){
+         $("#b1").click(function(){
+             alert("Texto: " + $("p").text());
+         });
+         $ ("#b2").click(function(){
+            alert("HTML: " + $("p").html());
+         });
+     });
+    </script>
+</head>
+<body>
+    <p>texto usando <b>negrito</b></p>
+    <button id="b1">Text</button>
+    <button id="b2">HTML</button>
+</body>
+</html>

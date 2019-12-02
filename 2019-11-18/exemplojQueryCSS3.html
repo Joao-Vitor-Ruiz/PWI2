@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>exemplojQueryCSS 3</title>
+    <style>
+    .vermelho{
+        color: red;
+    }
+    .azul{
+        color: blue;
+    }
+    </style>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").removeClass("vermelho");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Título</h1>
+    <h2>Cabeçalho</h2>
+    <p class="vermelho">Isso é um parágrafo</p>
+    <p class="vermelho">Isso é um parágrafo também</p>
+    <button>Clique para Tirar no CSS</button>
+</body>
+</html>

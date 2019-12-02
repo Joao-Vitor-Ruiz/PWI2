@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo numero 5 de CSS com Jquerry</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <style>
+    .vermelho{
+        color: red;
+    }
+    .azul{
+        color: blueviolet;
+    }
+    </style>
+    <script>
+        $(document).ready(function(){
+            var p = $("p");
+            $("button").click(function(){
+                if(p.hasClass("vermelho")){
+                    p.removeClass("vermelho");
+                    p.addClass("azul");
+                }else if (p.hasClass("azul")){
+                    p.removeClass("azul");
+                }else{
+                    p.addClass("vermelho");
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <h1>Troque a cor dos paragrafos</h1>
+    <p> Isso é um Parágrafo </p>
+    <p> Isso é um Parágrafo </p>
+    <button>Troque a cor</button>
+</body>
+</html>
